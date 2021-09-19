@@ -1,0 +1,155 @@
+.contact {
+  min-height: calc(100vh - 145px);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.25),
+      rgba(0, 0, 0, 0.65)
+    ),
+    url(../images/contact-bg.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 1550px;
+  //   margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  .contact-holder {
+    width: 1000px;
+    height: 600px;
+    background-color: white;
+    display: flex;
+
+    .contact-image {
+      height: 100%;
+      min-width: 420px;
+      background-image: url(../images/contact-image.jpg);
+      background-position: center;
+      background-size: cover;
+    }
+
+    form {
+      margin-left: 40px;
+      margin-top: 90px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .input {
+        font-size: 25px;
+        width: 485px;
+        border: none;
+        border-bottom: 1px black solid;
+        outline: none;
+        padding: 4px;
+        margin-bottom: 90px;
+        letter-spacing: 2px;
+      }
+
+      .textarea {
+        font-size: 25px;
+        width: 485px;
+        height: 100px;
+        border: none;
+        border-bottom: 1px black solid;
+        outline: none;
+        padding: 4px;
+        // margin-bottom: 70px;
+        letter-spacing: 2px;
+      }
+
+      .submit {
+        width: 100px;
+        height: 40px;
+        margin-top: 40px;
+        font-size: 18px;
+        background-color: white;
+        outline: none;
+        text-transform: uppercase;
+        border: 1px solid black;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .contact {
+    .contact-holder {
+      width: 830px;
+      height: 500px;
+
+      .contact-image {
+        min-width: 291px;
+      }
+
+      form {
+        margin-top: 50px;
+        margin-left: 25px;
+
+        .input {
+          margin-bottom: 75px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .contact {
+    min-height: 100vh;
+    .contact-holder {
+      width: 570px;
+      height: 1200px;
+      flex-direction: column;
+      margin-top: 60px;
+      margin-bottom: 60px;
+
+      .contact-image {
+        min-width: 291px;
+        height: 700px;
+      }
+
+      form {
+        margin-top: 50px;
+        margin-left: 0px;
+
+        .input {
+          margin-bottom: 75px;
+          margin-left: 0px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .contact {
+    min-height: 100vh;
+    .contact-holder {
+      width: 400px;
+      height: 1200px;
+      flex-direction: column;
+      margin-top: 60px;
+      margin-bottom: 60px;
+
+      .contact-image {
+        min-width: 291px;
+        height: 700px;
+      }
+
+      form {
+        margin-top: 50px;
+        margin-left: 0px;
+
+        .input {
+          width: 360px;
+          margin-bottom: 75px;
+          margin-left: 0px;
+        }
+
+        .textarea {
+          width: 360px;
+        }
+      }
+    }
+  }
+}

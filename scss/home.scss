@@ -1,0 +1,77 @@
+.home {
+  min-height: calc(100vh - 175px);
+  background: linear-gradient(to right, white 50%, #292d33 50%);
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  .home-text {
+    width: 350px;
+    margin-left: 70px;
+    h1 {
+      font-size: 40px;
+      margin-bottom: 32px;
+    }
+
+    p {
+      font-size: 19px;
+      margin-bottom: 32px;
+    }
+
+    .learn-more {
+      width: 185px;
+      height: 48px;
+      background-color: black;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+
+      a {
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .camera-man {
+    width: 310px;
+    height: 420px;
+    background-image: url(../images/camera-guy.jpg);
+    background-position: center;
+    background-size: cover;
+    border: white 10px solid;
+    margin-top: 135px;
+  }
+
+  .camera-equipment {
+    width: 305px;
+    height: 357px;
+    background-image: url(../images/camera-equipment.jpg);
+    background-position: center;
+    background-size: cover;
+    border: white 10px solid;
+    margin-bottom: 100px;
+    margin-left: -40px;
+    margin-right: 70px;
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .home {
+    flex-direction: column;
+    background: linear-gradient(to bottom, white 50%, #292d33 50%);
+
+    .home-text {
+      margin-top: 100px;
+      margin-bottom: -30px;
+    }
+
+    .camera-equipment {
+      margin-bottom: 40px;
+      margin-top: 40px;
+    }
+  }
+}

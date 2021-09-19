@@ -1,0 +1,533 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+@font-face {
+  font-family: RalewayReg;
+  src: url(fonts/static/Raleway-Regular.ttf);
+}
+* {
+  font-family: RalewayReg;
+}
+
+nav {
+  width: 100%;
+  height: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+nav .logo {
+  min-height: 65px;
+  min-width: 160px;
+  margin-left: 70px;
+  background-image: url(../images/logo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 240px;
+}
+nav .links {
+  margin-right: 70px;
+  width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+nav .links a {
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 850px) {
+  nav .logo {
+    margin-left: 30px;
+  }
+  nav .links {
+    width: 300px;
+    margin-right: 50px;
+  }
+  nav .links a {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 600px) {
+  nav .logo {
+    margin-left: 20px;
+  }
+  nav .links {
+    width: 250px;
+    margin-right: 20px;
+  }
+  nav .links a {
+    font-size: 15px;
+  }
+}
+.home {
+  min-height: calc(100vh - 175px);
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, white), color-stop(50%, #292d33));
+  background: linear-gradient(to right, white 50%, #292d33 50%);
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.home .home-text {
+  width: 350px;
+  margin-left: 70px;
+}
+.home .home-text h1 {
+  font-size: 40px;
+  margin-bottom: 32px;
+}
+.home .home-text p {
+  font-size: 19px;
+  margin-bottom: 32px;
+}
+.home .home-text .learn-more {
+  width: 185px;
+  height: 48px;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.home .home-text .learn-more a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+.home .camera-man {
+  width: 310px;
+  height: 420px;
+  background-image: url(../images/camera-guy.jpg);
+  background-position: center;
+  background-size: cover;
+  border: white 10px solid;
+  margin-top: 135px;
+}
+.home .camera-equipment {
+  width: 305px;
+  height: 357px;
+  background-image: url(../images/camera-equipment.jpg);
+  background-position: center;
+  background-size: cover;
+  border: white 10px solid;
+  margin-bottom: 100px;
+  margin-left: -40px;
+  margin-right: 70px;
+}
+
+@media screen and (max-width: 1030px) {
+  .home {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, white), color-stop(50%, #292d33));
+    background: linear-gradient(to bottom, white 50%, #292d33 50%);
+  }
+  .home .home-text {
+    margin-top: 100px;
+    margin-bottom: -30px;
+  }
+  .home .camera-equipment {
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+}
+.about {
+  min-height: calc(100vh - 145px);
+  background-color: #bebebe;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.about .owner-shadow {
+  min-width: 380px;
+  min-height: 380px;
+  border-radius: 50%;
+  background-color: #494949;
+  margin-bottom: 120px;
+}
+.about .owner-image {
+  min-width: 380px;
+  min-height: 380px;
+  border-radius: 50%;
+  background-image: url(../images/owner.jpg);
+  background-position: top;
+  background-size: cover;
+  margin-left: -420px;
+}
+.about .about-text {
+  margin-top: 150px;
+  width: 500px;
+}
+.about .about-text h1 {
+  font-size: 45px;
+  margin-bottom: 32px;
+}
+.about .about-text p {
+  font-size: 19px;
+}
+
+@media screen and (max-width: 1150px) {
+  .about .owner-shadow {
+    margin-left: 40px;
+  }
+  .about .owner-image {
+    margin-left: -300px;
+  }
+  .about .about-text {
+    margin-left: 40px;
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about .owner-shadow {
+    margin-left: 0px;
+    margin-top: 90px;
+    margin-left: -70px;
+  }
+  .about .owner-image {
+    margin-top: -430px;
+    margin-left: 0px;
+    margin-left: 70px;
+  }
+  .about .about-text {
+    margin: 70px 0px;
+    padding: 0px 22px;
+  }
+}
+.shop {
+  min-height: calc(100vh - 175px);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(62%, #292d33), color-stop(38%, white));
+  background: linear-gradient(to top, #292d33 62%, white 38%);
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.shop .product1 {
+  width: 330px;
+  height: 515px;
+  margin-bottom: 30px;
+}
+.shop .product1 h1 {
+  margin-left: 5px;
+  margin-top: 25px;
+  color: white;
+}
+.shop .product1 p {
+  margin-left: 5px;
+  color: white;
+}
+.shop .product1 .image1 {
+  width: 330px;
+  height: 330px;
+  background-image: url(../images/polaroid.jpg);
+  background-position: center;
+  background-size: cover;
+  border: 15px white solid;
+}
+.shop .product1 .image3 {
+  width: 330px;
+  height: 330px;
+  background-image: url(../images/antique.jpg);
+  background-position: center;
+  background-size: 450px;
+  border: 15px white solid;
+}
+.shop .product2 {
+  width: 330px;
+  height: 515px;
+  margin-top: 65px;
+}
+.shop .product2 h1 {
+  margin-left: 5px;
+}
+.shop .product2 p {
+  margin-left: 5px;
+  margin-bottom: 40px;
+}
+.shop .product2 .image2 {
+  width: 330px;
+  height: 330px;
+  background-image: url(../images/classic.jpg);
+  background-position: center;
+  background-size: 470px;
+  border: 15px white solid;
+}
+
+@media screen and (max-width: 1050px) {
+  .shop {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, white), color-stop(50%, #292d33));
+    background: linear-gradient(to top, white 50%, #292d33 50%);
+    margin-top: 650px;
+  }
+  .shop .product1 .image1,
+.shop .product1 .image3 {
+    border: solid black 15px;
+  }
+  .shop .product1 h1 {
+    color: black;
+  }
+  .shop .product1 p {
+    color: black;
+  }
+  .shop .product1-top {
+    margin-top: -570px;
+    margin-bottom: 550px;
+  }
+  .shop .product1-top h1 {
+    color: black;
+  }
+  .shop .product1-top p {
+    color: black;
+  }
+  .shop .product2 {
+    margin-top: -450px;
+    margin-bottom: 100px;
+  }
+  .shop .product2 h1 {
+    color: white;
+  }
+  .shop .product2 p {
+    color: white;
+  }
+}
+.contact {
+  min-height: calc(100vh - 145px);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.65))), url(../images/contact-bg.jpg);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.65)), url(../images/contact-bg.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 1550px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.contact .contact-holder {
+  width: 1000px;
+  height: 600px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.contact .contact-holder .contact-image {
+  height: 100%;
+  min-width: 420px;
+  background-image: url(../images/contact-image.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.contact .contact-holder form {
+  margin-left: 40px;
+  margin-top: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contact .contact-holder form .input {
+  font-size: 25px;
+  width: 485px;
+  border: none;
+  border-bottom: 1px black solid;
+  outline: none;
+  padding: 4px;
+  margin-bottom: 90px;
+  letter-spacing: 2px;
+}
+.contact .contact-holder form .textarea {
+  font-size: 25px;
+  width: 485px;
+  height: 100px;
+  border: none;
+  border-bottom: 1px black solid;
+  outline: none;
+  padding: 4px;
+  letter-spacing: 2px;
+}
+.contact .contact-holder form .submit {
+  width: 100px;
+  height: 40px;
+  margin-top: 40px;
+  font-size: 18px;
+  background-color: white;
+  outline: none;
+  text-transform: uppercase;
+  border: 1px solid black;
+}
+
+@media screen and (max-width: 1150px) {
+  .contact .contact-holder {
+    width: 830px;
+    height: 500px;
+  }
+  .contact .contact-holder .contact-image {
+    min-width: 291px;
+  }
+  .contact .contact-holder form {
+    margin-top: 50px;
+    margin-left: 25px;
+  }
+  .contact .contact-holder form .input {
+    margin-bottom: 75px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .contact {
+    min-height: 100vh;
+  }
+  .contact .contact-holder {
+    width: 570px;
+    height: 1200px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  .contact .contact-holder .contact-image {
+    min-width: 291px;
+    height: 700px;
+  }
+  .contact .contact-holder form {
+    margin-top: 50px;
+    margin-left: 0px;
+  }
+  .contact .contact-holder form .input {
+    margin-bottom: 75px;
+    margin-left: 0px;
+  }
+}
+@media screen and (max-width: 710px) {
+  .contact {
+    min-height: 100vh;
+  }
+  .contact .contact-holder {
+    width: 400px;
+    height: 1200px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  .contact .contact-holder .contact-image {
+    min-width: 291px;
+    height: 700px;
+  }
+  .contact .contact-holder form {
+    margin-top: 50px;
+    margin-left: 0px;
+  }
+  .contact .contact-holder form .input {
+    width: 360px;
+    margin-bottom: 75px;
+    margin-left: 0px;
+  }
+  .contact .contact-holder form .textarea {
+    width: 360px;
+  }
+}
+footer {
+  height: 70px;
+  background-color: #333333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+footer p {
+  margin-bottom: 0;
+  color: white;
+  font-size: 13px;
+}

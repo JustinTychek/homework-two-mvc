@@ -1,0 +1,114 @@
+.shop {
+  min-height: calc(100vh - 175px);
+  background: linear-gradient(to top, #292d33 62%, white 38%);
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  .product1 {
+    width: 330px;
+    height: 515px;
+    margin-bottom: 30px;
+    // background-color: palevioletred;
+
+    h1 {
+      margin-left: 5px;
+      margin-top: 25px;
+      color: white;
+    }
+
+    p {
+      margin-left: 5px;
+      color: white;
+    }
+
+    .image1 {
+      width: 330px;
+      height: 330px;
+      background-image: url(../images/polaroid.jpg);
+      background-position: center;
+      background-size: cover;
+      border: 15px white solid;
+    }
+
+    .image3 {
+      width: 330px;
+      height: 330px;
+      background-image: url(../images/antique.jpg);
+      background-position: center;
+      background-size: 450px;
+      border: 15px white solid;
+    }
+  }
+
+  .product2 {
+    width: 330px;
+    height: 515px;
+    margin-top: 65px;
+    // background-color: red;
+
+    h1 {
+      margin-left: 5px;
+      //   margin-top: 25px;
+    }
+
+    p {
+      margin-left: 5px;
+      margin-bottom: 40px;
+    }
+
+    .image2 {
+      width: 330px;
+      height: 330px;
+      background-image: url(../images/classic.jpg);
+      background-position: center;
+      background-size: 470px;
+      border: 15px white solid;
+    }
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .shop {
+    flex-direction: column;
+    // margin-top: 100px;
+    background: linear-gradient(to top, white 50%, #292d33 50%);
+    margin-top: 650px;
+
+    .product1 {
+      .image1,
+      .image3 {
+        border: solid black 15px;
+      }
+      h1 {
+        color: black;
+      }
+      p {
+        color: black;
+      }
+    }
+
+    .product1-top {
+      margin-top: -570px;
+      margin-bottom: 550px;
+      h1 {
+        color: black;
+      }
+      p {
+        color: black;
+      }
+    }
+
+    .product2 {
+      margin-top: -450px;
+      margin-bottom: 100px;
+      h1 {
+        color: white;
+      }
+      p {
+        color: white;
+      }
+    }
+  }
+}

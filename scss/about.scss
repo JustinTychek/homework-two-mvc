@@ -1,0 +1,78 @@
+.about {
+  min-height: calc(100vh - 145px);
+  background-color: #bebebe;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  .owner-shadow {
+    min-width: 380px;
+    min-height: 380px;
+    border-radius: 50%;
+    background-color: #494949;
+    margin-bottom: 120px;
+  }
+
+  .owner-image {
+    min-width: 380px;
+    min-height: 380px;
+    border-radius: 50%;
+    background-image: url(../images/owner.jpg);
+    background-position: top;
+    background-size: cover;
+    margin-left: -420px;
+  }
+
+  .about-text {
+    margin-top: 150px;
+    width: 500px;
+    h1 {
+      font-size: 45px;
+      margin-bottom: 32px;
+    }
+
+    p {
+      font-size: 19px;
+    }
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .about {
+    .owner-shadow {
+      margin-left: 40px;
+    }
+
+    .owner-image {
+      margin-left: -300px;
+    }
+
+    .about-text {
+      margin-left: 40px;
+      margin-right: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .about {
+    flex-direction: column;
+
+    .owner-shadow {
+      margin-left: 0px;
+      margin-top: 90px;
+      margin-left: -70px;
+    }
+
+    .owner-image {
+      margin-top: -430px;
+      margin-left: 0px;
+      margin-left: 70px;
+    }
+
+    .about-text {
+      margin: 70px 0px;
+      padding: 0px 22px;
+    }
+  }
+}
